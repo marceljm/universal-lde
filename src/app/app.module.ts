@@ -13,7 +13,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent, XLargeDirective } from './app.component';
 
-//import { DataGridModule, PanelModule, ButtonModule, DataTableModule, InputTextModule, GrowlModule } from 'primeng/primeng';
+import { DataGridModule, PanelModule, ButtonModule, DataTableModule, InputTextModule, GrowlModule } from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -27,11 +27,10 @@ import { AppComponent, XLargeDirective } from './app.component';
     TodoModule,
     AppRoutingModule,
     //BrowserModule,
-    //FormsModule,
-    //ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
     //HttpModule,
-    //JsonpModule,
-    //AppRoutingModule,
+    JsonpModule,
     //DataGridModule,
     //PanelModule,
     //ButtonModule,
@@ -40,7 +39,7 @@ import { AppComponent, XLargeDirective } from './app.component';
     //GrowlModule
   ],
   bootstrap: [
-    //AppComponent
+    AppComponent
   ]
 })
 export class AppModule { }
